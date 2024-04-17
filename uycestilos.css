@@ -1,0 +1,143 @@
+/* estilos del head */ 
+head {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    color: darkslategray;
+    font-family: fantasy;
+}
+
+/* estilos del body */ 
+body {
+    background-color: #cec8c8b0;
+    color: darkslategray;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+p {
+    background-color: #cec8c8b0;
+    color: darkslategray;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+form {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #cec8c8b0;
+    color: darkslategray;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+/* estilos type text */ 
+input[type=text] {
+    background-color: #cec8c817;
+    position: relative;
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+    font-size: 17px;
+    }
+  input[type=text]:focus {
+      position: relative;
+      border-bottom: 3px solid #e5f877;
+      width: 30%;
+      outline: none;
+      text-align: center;
+      font-size: 25px;
+  }
+  
+/* estilos type email */ 
+input[type=email] {
+    background-color: #cec8c817;
+    position: relative;
+    width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+  transition: width 0.4s ease-in-out;
+  text-align: center;
+  font-size: 17px;
+}
+input[type=email]:focus {
+    position: relative;
+    border-bottom: 3px solid #e5f877;
+    width: 30%;
+    outline: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/* estilos type password */ 
+input[type=password] {
+    background-color: #cec8c817;
+    position: relative;
+    width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+  transition: width 0.4s ease-in-out;
+  text-align: center;
+  font-size: 17px;
+}
+input[type=password]:focus {
+    position: relative;
+    border-bottom: 3px solid #e5f877;
+    width: 30%;
+    outline: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+/* estilos type button y submit */ 
+input[type=button], input[type=submit], input[type=reset] {
+    position: relative;
+    background-color: #000;
+    border: none;
+    width: 20%;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-align: center;
+    transition-duration: 1s; 
+    transition-timing-function: linear;
+    font-size: 17px;
+  }
+input[type=submit]:hover {
+position: relative;
+background-color: #428565;
+width: 30%;
+outline: none;
+text-align: center;
+font-size: 17px;
+box-shadow: 3px 0px 30px rgb(118, 180, 126);
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}

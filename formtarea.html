@@ -5,78 +5,100 @@
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"/>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 	<title>Validación de Formulario con Javascript</title>
     <h1>FORMULARIO DE CONTACTO</h1>
 </head>
 <body>
 	<main>
-            <form action="" method="" id="formtarea" name="formtarea" onsubmit="return validarFormulario ()">
+            <form action=""  class="form" id="formtarea" name="formtarea">
 
 <!-- Nombre --> 
-<div class="grupoform" id="grupo nombre">
-    <label for="nombre">NOMBRE:</label><br> 
-    <input type="text" id="nombre" name="nombre" maxlength="20" placeholder="Escriba su Nombre" 
-    onkeypress="return ' áéíóúabcdefghijklmnñopqrstuvwxyzABCDEFGHIJKMLNÑOPQRSTUVWXYZ'.includes(event.key)" required><br> 
-    <span id="name-error" class="error-message"></span>   
+<div class="grupoform" id="gruponombre">
+    <label for="nombre" class="formlabel">NOMBRE:</label>
+    <div class="grupoforminput">
+    <input type="text" class="forminput" id="nombre" name="nombre" maxlength="20" placeholder="Escriba su Nombre" 
+    onkeypress="return ' áéíóúabcdefghijklmnñopqrstuvwxyzABCDEFGHIJKMLNÑOPQRSTUVWXYZ'.includes(event.key)" required> 
+    <p class="forminputerror">El Nombre solo debe contener letras y no superar los 20 caracteres</p>
 </div>
     <br/>
     <!-- Apellido --> 
-    <div class="grupoform" id="grupo apellido">  
-    <label for="apellido">APELLIDO:</label><br> 
-    <input type="text"  id="apellido" name="apellido" maxlength="20"  placeholder="Escriba su Apellido"
+    <div class="grupoform" id="grupoapellido">  
+    <label for="apellido" class="formlabel">APELLIDO:</label>
+    <div class="grupoforminput">
+    <input type="text" class="forminput"  id="apellido" name="apellido" maxlength="20"  placeholder="Escriba su Apellido"
     onkeypress="return ' áéíóúabcdefghijklmnñopqrstuvwxyzABCDEFGHIJKMLNÑOPQRSTUVWXYZ'.includes(event.key)" required>
-    <span id="apellido-error" class="error-message"></span>
+    <p class="forminputerror">El Apellido solo debe contener letras y no superar los 20 caracteres</p>
 </div>
 <br/>
 <!-- DNI -->
-<div class="grupoform" id="grupo dni">
-    <label for="dni">DNI:</label><br> 
-    <input type="text" id="dni" name="dni" minlength="7" maxlength="8" onkeypress="return '0123456789'.includes(event.key)"   
+<div class="grupoform" id="grupodni">
+    <label for="dni" class="formlabel">DNI:</label> 
+    <div class="grupoforminput">
+    <input type="text" class="forminput" id="dni" name="dni" minlength="7" maxlength="8" onkeypress="return '0123456789'.includes(event.key)"   
   placeholder="Escriba su DNI" required/><br> 
 </div>
     <br/>
 <!-- Fecha de Nacimiento -->
-<div class="grupoform" id="grupo fecha">  
-    <label for="fecha">FECHA DE NACIMIENTO:</label><br> 
-    <input type="date"  min="1924-01-01" max="2124-01-01" onkeydown="return false" onfocus="this.max=new Date().toISOString().split('T')[0]" required pattern="\d{4}-\d{2}-\d{2}"  required/>
+<div class="grupoform" id="grupofecha">  
+    <label for="fecha" class="formlabel">FECHA DE NACIMIENTO:</label>
+    <div class="grupoforminput">
+    <input type="date" class="forminput" min="1924-01-01" max="2124-01-01" onkeydown="return false" onfocus="this.max=new Date().toISOString().split('T')[0]" required pattern="\d{4}-\d{2}-\d{2}"  required/>
     </div>
     <br/>
     <!-- Genero --> 
-<div class="grupoform" id="grupo genero">
-    <label for="nombre">GÉNERO:</label><br><br/> 
-    <p>Masculino</p> <input type="radio"  id="genero" name="genero" value="Masculino" name="genero" checked > <br>
-    <p>Femenino</p> <input type="radio"  id="genero" value="Femenino" name="genero"> <br>
-    <p>Otro</p> <input type="radio"  id="genero" value="Otro" name="genero"> <br> 
+<div class="grupoform" id="grupogenero">
+    <label for="nombre" class="formlabel">GÉNERO:</label>
+    <div class="grupoforminput">
+    <p>Masculino</p> <input type="radio" class="forminput" id="genero" name="genero" value="Masculino" name="genero" checked > <br>
+    <p>Femenino</p> <input type="radio" class="forminput"  id="genero" value="Femenino" name="genero"> <br>
+    <p>Otro</p> <input type="radio" class="forminput"  id="genero" value="Otro" name="genero"> <br> 
 </div>
 <br/>
  <!-- Email --> 
- <div class="grupoform" id="grupo email">  
-    <label for="email">E-MAIL:</label><br> 
-    <input type="email" id="email" name="email"  pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" placeholder="ejemplo@ejemplo.com /.ar" required/>
-    <span id="email-error" class="error-message"></span>
-</div>
+ <div class="grupoform" id="grupoemail">  
+    <label for="email" class="formlabel">E-MAIL:</label>
+    <div class="grupoforminput">
+    <input type="email" class="forminput" id="email" name="email"  pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" placeholder="ejemplo@ejemplo.com /.ar" required/>
+    <p class="forminputerror">Ingrese un Email válido</p>
+    </div>
 <br/>
 <!-- Contraseña --> 
-<div class="grupoform" id="grupo password">
-    <label for="password">CONTRASEÑA:</label><br> 
-    <input type="password" id="password" name="password"  minlength="10" maxlength="15" placeholder="***************" 
-    required><br> 
-    <span id="password-error" class="error-message"></span>
+<div class="grupoform" id="grupopassword">
+    <label for="password" class="formlabel">CONTRASEÑA:</label>
+    <div class="grupoforminput">
+    <input type="password" class="forminput" id="password" name="password"  minlength="10" maxlength="15" placeholder="***************" 
+    required><p class="forminputerror">La Contraseña debe ser entre 15 y 20 caracteres</p>
+    <br> 
 </div>
     <br/>
 <!-- Contraseña2 --> 
-<div class="grupoform" id="grupo password2">
-    <label for="password2">REPETIR CONTRASEÑA:</label><br> 
-    <input type="password" id="password2" name="password2"  minlength="10" maxlength="15" placeholder="***************"
-    required><br> 
+<div class="grupoform" id="grupopassword2">
+    <label for="password2" class="formlabel">REPETIR CONTRASEÑA:</label> 
+    <div class="grupoforminput">
+    <input type="password" class="forminput" id="password2" name="password2"  minlength="10" maxlength="15" placeholder="***************"
+    required><p class="forminputerror">Las Contraseñas deben ser iguales</p><br> 
 </div>
     <br/>
+<!-- Términos y condiciones --> 
+<div class="grupoform" id="grupoterminos">
+<label class="formlabel">
+    Acepto los Términos y Condiciones<input type="checkbox" id="terminos" name="terminos" required>   
+</label>    
+</div>
+<br/>
+<div class="formmensaje" id="formmensaje">
+    <p class="mensajeerror">
+        <b>Error:</b> Por favor complete los campos necesarios correctamente.
+    </p>
+</div>
+<br/>
 <!-- Boton Enviar --> 
-<div class="grupoform" id="grupo enviar">
+<div class="grupoform" id="grupoenviar">
     <input type="submit" name="submit" value="ENVIAR FORMULARIO" />
-
+<p class="formmensajeeexito" id="formmensajeeexito">Formulario enviado de forma correcta!</p>
 </form>
 </main>
+<script src="script.js"></script>
 </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Formulario de Validacion</title>
+        <link rel="stylesheet" href="uycestilos.css" />
+    </head>
+
+    <body>
+        <h1>Formulario de Registro</h1>
+        <form
+            name="RegForm"
+            onsubmit="return validateForm()"
+        >
+            <p>
+                <label for="name">Usuario:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="Name"
+                    placeholder="Ingrese su Usuario"
+                /><br/>
+                <span
+                    id="name-error"
+                    class="error-message"
+                ></span>
+            </p>
+            <p>
+                <label for="email"
+                    >E-mail:</label
+                >
+                <input
+                    type="email"
+                    id="email"
+                    name="EMail"
+                    placeholder="Ingrese su E-mail"
+                /><br/>
+                <span
+                    id="email-error"
+                    class="error-message"
+                ></span>
+            </p>
+            <p>
+                <label for="password"
+                    >Password:</label
+                >
+                <input
+                    type="password"
+                    id="password"
+                    name="Password"
+                    placeholder="******"
+                /><br/>
+                <span
+                    id="password-error"
+                    class="error-message"
+                ></span>
+            </p>
+            <p>
+               
+                <label for="agree"
+                    >Acepto los Términos y Condiciones</label
+                > <input
+                type="checkbox"
+                id="agree"
+                name="Agree"
+            /><br/>
+                <br/>
+                <span
+                    id="agree-error"
+                    class="error-message"
+                ></span>
+            </p>
+            <p>
+                <input
+                    type="submit"
+                    value="ENVIAR"
+                    name="Submit"
+                /><br/>
+            </p>
+        </form>
+        <script src="uycscripts.js"></script>
+    </body>
+</html>

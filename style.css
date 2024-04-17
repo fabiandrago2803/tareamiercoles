@@ -1,3 +1,4 @@
+/* estilos del head */ 
 head {
     text-align: center;
     position: relative;
@@ -10,6 +11,7 @@ h1 {
     font-family: fantasy;
 }
 
+/* estilos del body */ 
 body {
     background-color: #cec8c8b0;
     color: darkslategray;
@@ -17,21 +19,23 @@ body {
     font-family: fantasy;
 }
 
-p {
-color: black;
-font-family: sans-serif bold;
-font-size: 15px;
-display: inline;
+/* estilos etiquetas */ 
+.formlabel {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* estilos inputs */ 
+.grupoforminput {
+position: relative;
 }
 
 
-::placeholder {
-    color: grey;
-    opacity: 0.5; }
-
+/* estilos type text */ 
 input[type=text] {
-    background-color: #cec8c817;
-    position: relative;
+  background-color: #cec8c817;
+  position: relative;
   width: 20%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -49,9 +53,10 @@ input[type=text]:focus {
     width: 30%;
     outline: none;
     text-align: center;
-    font-size: 17px;
+    font-size: 25px;
 }
 
+/* estilos type date */ 
 input[type=date] {
     background-color: #cec8c817;
     ;
@@ -73,9 +78,10 @@ input[type=date]:focus {
     width: 30%;
     outline: none;
     text-align: center;
-    font-size: 17px;
+    font-size: 25px;
 }
 
+/* estilos type radio */ 
 input[type=radio] {
 width: 30px;
 height: 17px;
@@ -87,6 +93,7 @@ height: 17px;
     margin-top: 6px;
    }
 
+/* estilos type email */ 
 input[type=email] {
     background-color: #cec8c817;
     position: relative;
@@ -107,9 +114,10 @@ input[type=email]:focus {
     width: 30%;
     outline: none;
     text-align: center;
-    font-size: 17px;
+    font-size: 25px;
 }
 
+/* estilos type password */ 
 input[type=password] {
     background-color: #cec8c817;
     position: relative;
@@ -130,10 +138,15 @@ input[type=password]:focus {
     width: 30%;
     outline: none;
     text-align: center;
-    font-size: 17px;
+    font-size: 25px;
 }
 
+/*estilos del checkbox*/
+    input[type=checkbox] {
+        margin-left: 15px;
+    }
 
+/* estilos type button y submit */ 
     input[type=button], input[type=submit], input[type=reset] {
         position: relative;
         background-color: #000;
@@ -155,11 +168,61 @@ input[type=submit]:hover {
     outline: none;
     text-align: center;
     font-size: 17px;
+    box-shadow: 3px 0px 30px rgb(118, 180, 126);
 }
 
-.error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
+/* estilos parrafos */ 
+p {
+    color: black;
+    font-family: sans-serif bold;
+    font-size: 17px;
+    display: inline;
+    }
+    
+    /* estilos del placeholder */ 
+    ::placeholder {
+        color: grey;
+        opacity: 0.5;
+       }
+    
+/* estilos del error*/
+.forminputerror {
+font-size: 12px;
+margin-bottom: 0;
+display: none;
+}
+.forminputerror-activo {
+   display: block;
+    }
+    /*estilos mensaje error*/
+.mensajeerror {
+    font-size: 15px;
+    color: #bb2929;
+    padding: 15px;
+    font-style: italic;  
+    display: none; 
+}
+.mensajeerror-activo {
+display: block;
 }
 
+/*estilos del mensaje exito*/
+.formmensajeeexito {
+    font-size: 15px;
+    color: rgb(82, 216, 82);
+    padding: 15px;
+    display: none;
+}
+.formmensajeeexito-activo {
+    display: block;
+}
+
+/* estilos validaciones*/
+.grupoform-incorrecto .formlabel {
+color: #bb2929;
+}
+.grupoform-incorrecto .forminput {
+    border-bottom: 3px solid #bb2929;
+    }
+
+    
