@@ -53,6 +53,7 @@ function validateForm() {
     }
 
     return isValid;
+
 }
 
 // evitar el submit al presionar enter
