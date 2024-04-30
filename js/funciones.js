@@ -6,8 +6,8 @@ Insertar_registro();
 
 function Insertar_registro()
 {
-//evento click en el boton #btn_submit
-$(document).on('click','#submit',function()
+//evento click en el boton #btn_register
+$(document).on('click','#btn_register',function()
 {
 var nombre = $('#nombre').val();
 var apellido = $('#apellido')
@@ -20,7 +20,7 @@ var password2 = $('#password2').val();
 //Validacion por frontend
 if(nombre == "" || email =="" || apellido == "" || dni =="" || fecha =="" || password =="" || password2 =="")
 {
-    $('#message').html('Llenar los campos en blanco');
+    $('#mensaje').html('Llenar los campos en blanco');
 }
 else
 {
@@ -28,10 +28,10 @@ $.ajax(
     {
         url: 'insertar.php',
         method: 'post',
-        data: {UName:Name,UEmail:Email},  //etiqueta:data
+        data: {UName:nombre,UApellido:apellido,UDni:dni,UFecha:fecha,UEmail:email,UPassword:password,UPassword2:password2},  //etiqueta:data
         success: function(data)
         {
-            $('#message').html(data);
+            $('#mensaje').html(data);
             //$('#Registration').modal('show');
             //$('form').trigger('reset');
             //Mostrar_registro();
