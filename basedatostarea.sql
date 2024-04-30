@@ -43,11 +43,11 @@ CREATE TABLE `basedatostarea` (
 
 
 
-INSERT INTO `basedatostarea` (`id`, `nombre`, `apellido`, `dni`, `f_nacimiento`, `genero`, `email`, `password`, `password2`) VALUES
-(1, 'daniel', 'perez', 31546954, '2016-04-05', 0, 'saddad@dffsfsd.com',  '1111111111', '1111111111'),
-(2, 'andres', 'Aldair', 97554661, '2014-10-15', 0, 'ksldfsdlfn@dsksdf.com',  '2222222222', '2222222222'),
-(3, 'Flavio', 'Dron', 27459078, '2013-11-14', 0, 'dsfdsfsa@dsfdssa.com', '3333333333', '3333333333'),
-(4, 'Martin', 'Mangia', 23643091, '2014-04-24', 0, 'ddfsas@iuyyui.com', '4444444444', '4444444444');
+--INSERT INTO `basedatostarea` (`id`, `nombre`, `apellido`, `dni`, `f_nacimiento`, `genero`, `email`, `password`, `password2`) VALUES
+--(1, 'daniel', 'perez', 31546954, '2016-04-05', 0, 'saddad@dffsfsd.com',  '1111111111', '1111111111'),--
+--(2, 'andres', 'Aldair', 97554661, '2014-10-15', 0, 'ksldfsdlfn@dsksdf.com',  '2222222222', '2222222222'),--
+--(3, 'Flavio', 'Dron', 27459078, '2013-11-14', 0, 'dsfdsfsa@dsfdssa.com', '3333333333', '3333333333'),--
+--(4, 'Martin', 'Mangia', 23643091, '2014-04-24', 0, 'ddfsas@iuyyui.com', '4444444444', '4444444444');--
 --
 -- Índices para tablas volcadas
 --

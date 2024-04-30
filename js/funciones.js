@@ -31,8 +31,8 @@ $.ajax(
         data: {UName:nombre,UApellido:apellido,UDni:dni,UFecha:fecha,UEmail:email,UPassword:password,UPassword2:password2},  //etiqueta:data
         success: function(data)
         {
-            $('#mensaje').html('Se inserto bien');
-           // $('#mensaje').html(data);
+            //$('#mensaje').html('Se inserto bien');
+           $('#mensaje').html(data);
             //$('#Registration').modal('show');
             //$('form').trigger('reset');
             //Mostrar_registro();

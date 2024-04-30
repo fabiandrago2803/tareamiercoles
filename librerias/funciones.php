@@ -6,7 +6,7 @@ function insertarRegistro()
 {
 //echo 'Entro bien';
 global $con;
-$UserName= $_POST['UName'];
+$UserNombre= $_POST['UNombre'];
 $UserApellido= $_POST['UApellido'];
 $UserDni= $_POST['UDni'];
 $UserFecha= $_POST['UF_nacimiento'];
@@ -16,7 +16,7 @@ $UserPassword= $_POST['UPassword'];
 $UserPassword2= $_POST['UPassword2'];
 
 
-$query= "Insert Into basedatostarea.sql (nombre,apellido,dni,f_nacimiento,genero,email,password,password2) values('$UserName'), " 
+$query= "Insert Into basedatostarea.sql (nombre, apellido, dni, f_nacimiento, genero, email, password, password2) values('$UserNombre', '$UserApellido', '$UserDni', str_to_date('$UserFecha', '%d/%m/%Y'), '$UserGenero', '$UserEmail', '$UserPassword', '$UserPassword2')"; 
 
 
 
