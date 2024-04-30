@@ -53,4 +53,12 @@ function validateForm() {
     }
 
     return isValid;
+
 }
+
+// evitar el submit al presionar enter
+document.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+      e.preventDefault();
+    }
+  });
