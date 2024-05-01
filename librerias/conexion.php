@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect('localhost', 'root', '', 'basedatostarea');
+$con = mysqli_connect('localhost', 'root', '', 'basedatostarea');
 
 if(!$con)
 {
