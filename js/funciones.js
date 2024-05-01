@@ -1,7 +1,7 @@
 $(document).ready(function()
 {
 Insertar_registro();
-//alert("funciona");
+
 })
 
 function Insertar_registro()
@@ -36,6 +36,8 @@ $.ajax(
             //$('#Registration').modal('show');
             //$('form').trigger('reset');
             //Mostrar_registro();
+            alert("Entro a la funcion");
+            alert(Data);
         }
     })
 }
