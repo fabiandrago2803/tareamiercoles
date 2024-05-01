@@ -1,5 +1,5 @@
 $(document).ready(function()
-{alert("hola")
+{
 Insertar_registro();
 
 })
@@ -43,3 +43,5 @@ $.ajax(
 }
 })
 }
+
+//danimangialavori github para bajar los repositorios y ver por que no funcionan los alert
