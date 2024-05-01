@@ -28,7 +28,7 @@ $.ajax(
     {
         url: 'insertar.php',
         method: 'post',
-        data: {UName:nombre,UApellido:apellido,UDni:dni,UFecha:fecha,UEmail:email,UPassword:password,UPassword2:password2},  //etiqueta:data
+        data: {UName:nombre, UApellido:apellido, UDni:dni, UFecha:fecha, UEmail:email, UPassword:password, UPassword2:password2},  //etiqueta:data
         success: function(data)
         {
             //$('#mensaje').html('Se inserto bien');
