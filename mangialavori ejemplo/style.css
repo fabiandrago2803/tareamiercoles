@@ -255,8 +255,8 @@ color: #bb2929;
     /* image */
 img { position: relative;
     border: none;
-    height: 500px;
-      width: 800px;
+    height: 250px;
+      width: 400px;
     padding: 8px 16px;
     margin: 2px 1px;
     background-position: right;
