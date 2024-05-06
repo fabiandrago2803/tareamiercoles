@@ -86,7 +86,7 @@ input[type=radio] {
 width: 30px;
 height: 17px;
     font-size: 17px;
-    position: relative;
+    position: absolute;
     vertical-align:middle;
     float: right;
     margin-right:1200px;
