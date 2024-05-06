@@ -255,10 +255,10 @@ color: #bb2929;
     /* image */
 img { position: relative;
     border: none;
-    height: 700px;
-      width: 800px;
-    padding: 16px 32px;
-    margin: 4px 2px;
+    height: 250px;
+      width: 400px;
+    padding: 8px 16px;
+    margin: 2px 1px;
     background-position: right;
       background-repeat: no-repeat;
       background-size: cover;
