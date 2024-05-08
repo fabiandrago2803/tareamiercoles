@@ -35,7 +35,7 @@ else
             data: {Uname:user, Uapellido:apellido, Udni:dni, Ufechadenacimiento:fechadenacimiento, UEmail:email, Ucontrasena:contrasena, Urepetir:repetir},
             success: function (data)
         {
-            $('#Mensaje').html (data);
+           // $('#Mensaje').html (data);
           // $('#Mensaje').html ('Se Inserto Bien');
           //alert("Se inserto bien");
            // $('#Registration').modal ('show');
