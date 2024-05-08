@@ -20,7 +20,7 @@
 <body>
   <main>
 <div>
-<form id="miform" name="miform" action="" class="form" onsubmit="return validacion()" method="post">
+<form id="formulario" name="formulario" action="" class="form" onsubmit="return validacion()" method="post">
 
 <img src="Internet.png" width="800px" height="600px">
 
@@ -29,11 +29,12 @@
 <label for="nombre" class="formlabel">NOMBRE: </label><br>
 <div class="grupoforminput">
 <input type="text" class="forminput" id="nombre" name="nombre" maxlength="20" placeholder="Escriba su Nombre" 
-onkeypress="return ' áéíóúabcdefghijklmnñopqrstuvwxyzABCDEFGHIJKMLNÑOPQRSTUVWXYZ'.includes(event.key)" required> 
+  required> 
 <p class="forminputerror">El Nombre solo debe contener letras y no superar los 20 caracteres</p>
 </div>
 <br/>
-
+<!-- onkeypress="return 'áéíóúabcdefghijklmnñopqrstuvwxyzABCDEFGHIJKMLNÑOPQRSTUVWXYZ'.includes(event.key)"
+-->
 
 <!-- Apellido --> 
 <div class="grupoform" id="grupoapellido">  
@@ -50,11 +51,11 @@ onkeypress="return ' áéíóúabcdefghijklmnñopqrstuvwxyzABCDEFGHIJKMLNÑOPQRS
 <div class="grupoform" id="grupodni">
 <label for="dni" class="formlabel">DNI: </label><br>
 <div class="grupoforminput">
-<input type="text" id="dni" class="forminput" name="dni" minlength="7" maxlength="8" onkeypress="return '0123456789'.includes(event.key)"   
+<input type="text" id="dni" class="forminput" name="dni" minlength="7" maxlength="8"    
 placeholder="Escriba su DNI" required/><br> 
 </div>
 <br/>
-
+<!-- onkeypress="return '0123456789'.includes(event.key)" -->
 
 <!-- Fecha de Nacimiento -->
 <div class="grupoform" id="grupofecha">  
