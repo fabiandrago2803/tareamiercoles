@@ -27,8 +27,8 @@ const validarFormulario = (e) => {
         case "dni":
 			validarCampo(expresiones.dni, e.target, 'dni');
 		break;
-        case "fecha":
-			validarCampo(expresiones.fecha, e.target, 'fecha');
+        case "fechadenacimiento":
+			validarCampo(expresiones.fecha, e.target, 'fechadenacimiento');
 		break;
         case "genero":
 			validarCampo(expresiones.genero, e.target, 'genero');
@@ -36,11 +36,11 @@ const validarFormulario = (e) => {
         case "email":
 			validarCampo(expresiones.email, e.target, 'email');
 		break;
-		case "password":
-			validarCampo(expresiones.password, e.target, 'password');
+		case "Contrasena":
+			validarCampo(expresiones.password, e.target, 'Contrasena');
 			validarPassword2();
 		break;
-		case "password2":
+		case "Repetir":
 			validarPassword2();
 		break;
 		
@@ -63,8 +63,8 @@ const validarCampo = (expresion, input, campo) => {
 }
 
 const validarPassword2 = () => {
-	const inputPassword1 = document.getElementById('password');
-	const inputPassword2 = document.getElementById('password2');
+	const inputPassword1 = document.getElementById('Contrasena');
+	const inputPassword2 = document.getElementById('Repetir');
 
 	if(inputPassword1.value !== inputPassword2.value){
 		document.getElementById(`grupo__password2`).classList.add('formulario__grupo-incorrecto');
@@ -75,7 +75,7 @@ const validarPassword2 = () => {
 		document.getElementById(`grupo__password2`).classList.remove('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__password2`).classList.add('formulario__grupo-correcto');
 		document.querySelector(`#grupo__password2 .formulario__input-error`).classList.remove('formulario__input-error-activo');
-		campos['password'] = true;
+		campos['Contrasena'] = true;
 	}
 }
 
