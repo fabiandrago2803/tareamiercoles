@@ -43,7 +43,7 @@ else
            // Mostrar_registro();
 
            alert("Entro a la funcion");
-           alert(data);
+           //alert(data);
 
         } 
 
