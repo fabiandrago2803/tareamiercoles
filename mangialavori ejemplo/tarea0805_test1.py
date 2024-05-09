@@ -25,6 +25,7 @@ class TestTest1():
     self.driver.get("http://127.0.0.1/testing2024/tareamiercoles/mangialavori%20ejemplo/formulario.html")
     # 2 | setWindowSize | 1382x744 | 
     self.driver.set_window_size(1382, 744)
+    time.sleep(5)
     # 3 | click | id=nombre | 
     self.driver.find_element(By.ID, "nombre").click()
     # 4 | type | id=nombre | 111111
@@ -79,3 +80,6 @@ class TestTest1():
 scrap = TestTest1()
 scrap.setup_method()
 scrap.tarea0805_test1()
+
+
+#pip install urllib3==1.26.6
